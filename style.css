@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    width: 100%;
+    height: 100vh;
+}
+
+#panel{
+    width: 80%;
+    height: 80%;
+    background-color: darkviolet;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#ptop{
+    padding: 0 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.elem{
+    display: flex;
+   align-items: center;
+   gap: 20px;
+}
+.elem h2{
+    font-weight: 500;
+    font-size:25px ;
+}
+.box{
+   padding: 10px 20px;
+   background-color: white; 
+   border-radius: 5px;
+   color: #000;
+   font-size: 30px;
+   font-weight: 700;
+}
+#pbottom{
+ width: 100%;
+ height: calc(100% - 100px); 
+ padding:10px 0px 5px 15px ;
+ display: flex;
+ align-items: center; 
+ justify-content: center;
+ gap: 10px;
+ flex-wrap: wrap;
+ 
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 50px;
+   height: 50px; 
+   background-color: aquamarine;
+   color: rgb(9, 9, 9);
+   border-radius: 50%;
+   font-weight: 600;
+}
+.bubble:hover{
+    background-color:rgb(40, 238, 172);
+    cursor: pointer;
+}
+.over{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens (e.g., tablets and mobile devices) */
+    #panel {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    #ptop {
+        padding: 0 3%; /* Adjust padding for smaller screens */
+    }
+
+    .elem h2 {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+
+    .box {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    #pbottom {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
