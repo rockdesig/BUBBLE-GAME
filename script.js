@@ -1,5 +1,5 @@
 
-let timmer = 10;
+let timmer = 60;
 var score = 0;
 let rn = 0;
 
